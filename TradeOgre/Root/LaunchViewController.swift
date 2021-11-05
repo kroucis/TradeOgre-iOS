@@ -8,10 +8,9 @@
 import Combine
 import UIKit
 
-class LaunchViewController : UIViewController {
+class LaunchViewController : ViewController {
     let appState = AppState()
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func didBecomeActive() {
         delay(1.0) {
             if self.appState.isLoggedIn {
                 guard let authedVC = UIStoryboard(name: "Authenticated", bundle: nil).instantiateInitialViewController() as? AuthenticatedRootTabBarController else {

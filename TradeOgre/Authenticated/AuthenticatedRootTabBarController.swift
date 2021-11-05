@@ -45,6 +45,7 @@ class AuthenticatedRootTabBarController : UITabBarController, MarketsEndpointTyp
         super.viewDidLoad()
         
         self.loggedInSub = self.appState.loggedInPublisher
+            .receive(on: RunLoop.main)
             .sink { isLoggedIn in
                 if !(isLoggedIn) {
                     self.routeToUnauthedRoot()

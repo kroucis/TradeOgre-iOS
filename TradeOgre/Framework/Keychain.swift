@@ -15,9 +15,6 @@ struct Keychain {
         var keychainMap: [String : Any] = [:]
         keychainMap[(kSecClass as String)] = kSecClassGenericPassword
         keychainMap[(kSecAttrService as String)] = self.service
-        keychainMap[(kSecAttrSynchronizable as String)] = kCFBooleanFalse
-        keychainMap[(kSecMatchLimit as String)] = kSecMatchLimitOne
-        keychainMap[(kSecReturnData as String)] = kCFBooleanTrue
         let encodedKey: Data? = key.data(using: String.Encoding.utf8)
         keychainMap[(kSecAttrGeneric as String)] = encodedKey
         keychainMap[(kSecAttrAccount as String)] = encodedKey
@@ -32,6 +29,7 @@ struct Keychain {
     /// Set `passwordData` as the secure item under `key`, or remove the item under `key` if `passwordData` is nil.
     func set(passwordData: Data?, key: String) {
         var keychainMap = self.passwordMap(key: key)
+        keychainMap[(kSecAttrSynchronizable as String)] = kCFBooleanFalse
         if let data = passwordData {
             keychainMap[(kSecValueData as String)] = data
             let status = SecItemAdd((keychainMap as CFDictionary), nil)
@@ -58,7 +56,9 @@ struct Keychain {
     
     /// Get the password data under `key`, or nil if none has been set.
     func passwordData(key: String) -> Data? {
-        let keychainMap = self.passwordMap(key: key)
+        var keychainMap = self.passwordMap(key: key)
+        keychainMap[(kSecMatchLimit as String)] = kSecMatchLimitOne
+        keychainMap[(kSecReturnData as String)] = kCFBooleanTrue
         var result: AnyObject?
         let status = SecItemCopyMatching((keychainMap as CFDictionary), &result)
         guard status == errSecSuccess,

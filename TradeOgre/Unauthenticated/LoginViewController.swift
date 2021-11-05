@@ -8,34 +8,59 @@
 import Combine
 import UIKit
 
-protocol LoginStateType {
+protocol LoginStateType : APIKeysStateType {
     var appVersion: (String, String) { get }
 }
 
-protocol LoginEndpointType {
-    func login(public: String, private: String) -> Future<(), AppError>
+protocol LoginEndpointType : APIKeysEndpointType {
+    
 }
 
 class LoginViewController : ViewController, UITextFieldDelegate {
-    @IBOutlet weak var publicTextField: UITextField!
-    @IBOutlet weak var privateTextField: UITextField!
-    @IBOutlet weak var submitButton: UIButton!
-    @IBOutlet weak var iHaveMyKeysButton: UIButton!
-    @IBOutlet weak var formStackView: UIStackView!
     @IBOutlet weak var appVersionLabel: UILabel!
     
     var state: LoginStateType!
     var endpoint: LoginEndpointType!
+    
+    override func didBecomeActive() {
+        self.appVersionLabel.text = "App Version \(self.state.appVersion.0) (\(self.state.appVersion.1))"
+    }
+    
+    @IBAction func openWeb(_ sender: Any) {
+        let link = URL(string: "https://tradeogre.com/account/settings")!
+        UIApplication.shared.open(link)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "Keys",
+              let keysVC = segue.destination as? APIKeysViewController else {
+            return
+        }
+        keysVC.state = self.state
+        keysVC.endpoint = self.endpoint
+    }
+}
+
+protocol APIKeysStateType {
+    
+}
+
+protocol APIKeysEndpointType {
+    func login(public: String, private: String) -> Future<(), AppError>
+}
+
+class APIKeysViewController : ViewController, UITextFieldDelegate {
+    @IBOutlet weak var publicTextField: UITextField!
+    @IBOutlet weak var privateTextField: UITextField!
+    @IBOutlet weak var submitButton: UIButton!
+    
+    var state: APIKeysStateType!
+    var endpoint: APIKeysEndpointType!
     var loginSub: AnyCancellable?
     
     override func didBecomeActive() {
-        self.formStackView.isHidden = true
-        self.iHaveMyKeysButton.isHidden = false
-        self.submitButton.isEnabled = false
         self.publicTextField.text = nil
         self.privateTextField.text = nil
-        
-        self.appVersionLabel.text = "App Version \(self.state.appVersion.0) (\(self.state.appVersion.1))"
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard)))
     }
     
@@ -59,19 +84,6 @@ class LoginViewController : ViewController, UITextFieldDelegate {
                    })
     }
     
-    @IBAction func openWeb(_ sender: Any) {
-        self.dismissKeyboard()
-        
-        let link = URL(string: "https://tradeogre.com/account/settings")!
-        UIApplication.shared.open(link)
-    }
-    
-    @IBAction func iHaveMyKeys(_ sender: UIButton) {
-        self.formStackView.isHidden = false
-        self.iHaveMyKeysButton.isHidden = true
-        self.publicTextField.becomeFirstResponder()
-    }
-    
     var inputIsValid: Bool {
         if let key = self.publicTextField.text,
             key.count == 32,
@@ -90,5 +102,22 @@ class LoginViewController : ViewController, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         self.submitButton.isEnabled = self.inputIsValid
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch (self.publicTextField.text ?? "", self.privateTextField.text ?? "") {
+        case (let pub, let priv) where pub.count == 32 && priv.count == 32:
+            self.dismissKeyboard()
+            if self.inputIsValid {
+                self.submit(textField)
+            }
+            return true
+        case (let pub, let priv) where pub.count == 32 && priv.count != 32:
+            self.privateTextField.becomeFirstResponder()
+            return false
+        case (_, _):
+            self.publicTextField.becomeFirstResponder()
+            return false
+        }
     }
 }
