@@ -62,8 +62,10 @@ Bugs, crashes, tech debt, and other issues that are not "user visible" and shoul
 - Maybe need to access the Keychain for API keys every time? Keeping them in memory with the client may be considered "risky"? Seems extremely inefficient as I think the KeychainService stuff is an XPC call, so should be a MASSIVE perf penalty...
 
 ## Tips and Android Version
-If you would like to send a tip for this work, feel free to send some XMR to this address: 87pYWFvyhmrWdw2EFekpZaZJf4tm758maJAigzkPmd9tD8ou3VByDMuG1DpsFcmTBzZrafk38kLv71wX5sfpX2ri7Zbym1P
-If you would like to support the development of an Android version of this app, please send a lot of XMR to this address: 89sA2PuDuYyDvrozNKynxaYDPdkvLUbfbbBQHUaa3dPMbYKkXLWqgGvFsubenscmfE95uv6G9nVha4yskG5h9bef8ptFJLu
+If you would like to send a tip for this work, feel free to send some XMR to this address: `87pYWFvyhmrWdw2EFekpZaZJf4tm758maJAigzkPmd9tD8ou3VByDMuG1DpsFcmTBzZrafk38kLv71wX5sfpX2ri7Zbym1P`
+
+If you would like to support the development of an Android version of this app, please send a lot of XMR to this address: `89sA2PuDuYyDvrozNKynxaYDPdkvLUbfbbBQHUaa3dPMbYKkXLWqgGvFsubenscmfE95uv6G9nVha4yskG5h9bef8ptFJLu`
+
 For anyone who sends a tip, thank you very much! 
 
 ## License
