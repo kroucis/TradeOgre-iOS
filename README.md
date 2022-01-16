@@ -67,4 +67,4 @@ This project is MIT licensed. For the full license, see [LICENSE](LICENSE).
 The original author and current maintainer for this project is Kyle Roucis ([@kroucis](github.com/kroucis))
 
 ## Project Hosting
-This project is hosted on [GitHub as TradeOgreiOS](github.com/kroucis/tradeogreios) and is Open Source Software, subject to the License above.
+This project is hosted on [GitHub as TradeOgre-iOS](github.com/kroucis/TradeOgre-ios) and is Open Source Software, subject to the License above.
