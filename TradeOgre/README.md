@@ -1,7 +1,12 @@
 #  TradeOgre iOS
 
-## Technical Specifications
+## Overview
+TradeOgre iOS is an iOS client for the [TrageOgre.com](https://tradeogre.com) website and crypto-exchange platform. I was looking for their iOS client, noticed there wasn't an official one but saw that TradeOgre published their API specifications, so I figured "I'll build an iOS app!" After a month of development, the app is in the state you currently see it and is more-or-less ready for a 1.0 release. HOWEVER, two major hurdles prevent an "official" version:
+1. Apple refuses to publish the app in its current state because I do not have an "institutional development account appropriate for crypto-currency trading."
+1. @TradeOgre only has their Twitter handle for contact information and has not responded to my inquiries about getting their support to put this app on the Apple App Store.
+Sadly, this means that if you want to use this TradeOgre app, you must clone this repository to your own computer, build the project yourself, and install on your own device, including signing up to and paying for an Apple Developer Program license (100 USD/year). Seeing as I've had no external support and am providing this for free, this software is provided "as is" and without warranty or garuantee of any kind (See [LICENSE](LICENSE)). If you would like to see more features or support more work on this project, feel free to ping me in an issue. Until I have support from TradeOgre, Apple, or the TradeOgre community, I am considering this project to be abandoned.
 
+## Technical Specifications
 - **App Version**: 1.0.0 (100000)
 - **Minimum OS Version**: iOS 13.0
 - **Minimum Swift Version**: Swift 5.1

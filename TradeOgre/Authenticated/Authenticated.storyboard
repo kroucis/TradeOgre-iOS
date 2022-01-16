@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Kr-9a-NLl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Kr-9a-NLl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -47,7 +49,7 @@
                                     </searchBar>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="sar-kp-JaC" customClass="MarketsTableView" customModule="TradeOgre" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44" width="414" height="681"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MarketCell" id="Hn6-ff-ps4" customClass="MarketCell" customModule="TradeOgre" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="55.5" width="414" height="44"/>
@@ -71,13 +73,13 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHf-yM-Cer">
                                                             <rect key="frame" x="20" y="22" width="42" height="22"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                            <color key="textColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" systemColor="tertiaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FE-OH-AgB">
                                                             <rect key="frame" x="333" y="21.5" width="42" height="22.5"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                            <color key="textColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" systemColor="tertiaryLabelColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -115,7 +117,8 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="F9l-I3-gUP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="34s-la-Qwi" firstAttribute="centerX" secondItem="F9l-I3-gUP" secondAttribute="centerX" id="0dg-v8-2Mm"/>
                             <constraint firstItem="F9l-I3-gUP" firstAttribute="bottom" secondItem="34s-la-Qwi" secondAttribute="bottom" id="4G8-Zh-5tr"/>
@@ -124,7 +127,6 @@
                             <constraint firstItem="34s-la-Qwi" firstAttribute="centerY" secondItem="F9l-I3-gUP" secondAttribute="centerY" id="YIT-pX-ujS"/>
                             <constraint firstItem="34s-la-Qwi" firstAttribute="top" secondItem="F9l-I3-gUP" secondAttribute="top" id="hcC-1t-VA6"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="F9l-I3-gUP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Markets" id="Vgj-hx-xJi"/>
                     <navigationItem key="navigationItem" id="XMA-qB-Zfp"/>
@@ -147,13 +149,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RE6-BA-JHL">
-                                <rect key="frame" x="80.5" y="112.5" width="98" height="18"/>
+                                <rect key="frame" x="80" y="112.5" width="98.5" height="18"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                <color key="textColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="tertiaryLabelColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odv-SI-1JM">
-                                <rect key="frame" x="20" y="108" width="52.5" height="26.5"/>
+                                <rect key="frame" x="20" y="108" width="52" height="26.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -170,13 +172,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVJ-D7-Stq">
-                                                <rect key="frame" x="0.0" y="0.0" width="101.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxi-lx-72L">
-                                                <rect key="frame" x="101.5" y="0.0" width="248.5" height="20.5"/>
+                                                <rect key="frame" x="101" y="0.0" width="249" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -187,13 +189,13 @@
                                         <rect key="frame" x="0.0" y="24.5" width="350" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24h Change" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiU-EP-E6e">
-                                                <rect key="frame" x="0.0" y="0.0" width="94" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="93" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aF-Gc-7ZK">
-                                                <rect key="frame" x="94" y="0.0" width="256" height="20.5"/>
+                                                <rect key="frame" x="93" y="0.0" width="257" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -204,13 +206,13 @@
                                         <rect key="frame" x="0.0" y="49" width="350" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQV-Z8-af4">
-                                                <rect key="frame" x="0.0" y="0.0" width="57.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="57" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWJ-eb-Tc8">
-                                                <rect key="frame" x="57.5" y="0.0" width="292.5" height="20.5"/>
+                                                <rect key="frame" x="57" y="0.0" width="293" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -221,13 +223,13 @@
                                         <rect key="frame" x="0.0" y="73.5" width="350" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24h High" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0m-ot-FbF">
-                                                <rect key="frame" x="0.0" y="0.0" width="70" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvI-f9-jaZ">
-                                                <rect key="frame" x="70" y="0.0" width="280" height="20.5"/>
+                                                <rect key="frame" x="69.5" y="0.0" width="280.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -238,13 +240,13 @@
                                         <rect key="frame" x="0.0" y="98" width="350" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24h Low" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vI-xK-iMO">
-                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="65" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQT-6z-FRQ">
-                                                <rect key="frame" x="65.5" y="0.0" width="284.5" height="20.5"/>
+                                                <rect key="frame" x="65" y="0.0" width="285" height="20.5"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -255,7 +257,7 @@
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x6k-XT-x5u" customClass="DetailTableView" customModule="TradeOgre" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="308" width="414" height="491"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BuyOrderCell" textLabel="bbW-Wj-GMV" detailTextLabel="qSZ-dL-Imd" style="IBUITableViewCellStyleValue1" id="gcT-Wu-Anm" customClass="DetailTableViewCell" customModule="TradeOgre" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -265,10 +267,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bbW-Wj-GMV">
-                                                    <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="20" y="12" width="33" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" systemColor="systemGreenColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qSZ-dL-Imd">
@@ -289,10 +291,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="twm-GX-BKN">
-                                                    <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="20" y="12" width="33" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" systemColor="systemRedColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dPu-4c-2gF">
@@ -313,7 +315,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Q5v-No-2pw">
-                                                    <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="20" y="12" width="33" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -337,7 +339,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ltw-Yj-oeK">
-                                                    <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="20" y="12" width="33" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -375,12 +377,12 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7s9-45-cJA">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7s9-45-cJA">
                                         <rect key="frame" x="134" y="0.0" width="130" height="39"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Buy">
-                                            <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -391,12 +393,12 @@
                                             <segue destination="fec-cc-AeK" kind="presentation" identifier="Buy" id="Tuu-Ih-Zqg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6R-fX-64G">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6R-fX-64G">
                                         <rect key="frame" x="268" y="0.0" width="130" height="39"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Sell">
-                                            <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -422,7 +424,8 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="WES-pJ-LHC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="WES-pJ-LHC" firstAttribute="trailing" secondItem="t6y-vq-7pz" secondAttribute="trailing" constant="32" id="1WI-io-FtE"/>
                             <constraint firstItem="t6y-vq-7pz" firstAttribute="top" secondItem="odv-SI-1JM" secondAttribute="bottom" constant="8" id="5ab-x3-veW"/>
@@ -444,7 +447,6 @@
                             <constraint firstItem="WES-pJ-LHC" firstAttribute="trailing" secondItem="DIX-f9-CAP" secondAttribute="trailing" constant="8" id="u82-pV-TJW"/>
                             <constraint firstItem="odv-SI-1JM" firstAttribute="leading" secondItem="WES-pJ-LHC" secondAttribute="leading" constant="20" id="zaj-pt-ety"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="WES-pJ-LHC"/>
                     </view>
                     <navigationItem key="navigationItem" id="3PN-gO-bxx"/>
                     <connections>
@@ -473,14 +475,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocn-bJ-zzG">
-                                <rect key="frame" x="116.5" y="430.5" width="181" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocn-bJ-zzG">
+                                <rect key="frame" x="117" y="430.5" width="180" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Log In for Portfolio"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kPt-c8-XBt" customClass="BalancesTableView" customModule="TradeOgre" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="132" width="414" height="681"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BalanceCell" textLabel="o6c-nk-fPg" detailTextLabel="c6A-8e-zag" style="IBUITableViewCellStyleValue1" id="nVd-n4-533" customClass="BalanceTableViewCell" customModule="TradeOgre" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -490,7 +492,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o6c-nk-fPg">
-                                                    <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="20" y="12" width="33" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -522,7 +524,8 @@
                                 </connections>
                             </searchBar>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="yth-y0-bJj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ocn-bJ-zzG" firstAttribute="centerX" secondItem="yth-y0-bJj" secondAttribute="centerX" id="3zy-dL-2pa"/>
                             <constraint firstItem="V52-aC-EQM" firstAttribute="leading" secondItem="yth-y0-bJj" secondAttribute="leading" id="6fp-Ip-OTb"/>
@@ -534,7 +537,6 @@
                             <constraint firstItem="Ocn-bJ-zzG" firstAttribute="centerY" secondItem="yth-y0-bJj" secondAttribute="centerY" id="mpb-S7-G21"/>
                             <constraint firstItem="V52-aC-EQM" firstAttribute="top" secondItem="yth-y0-bJj" secondAttribute="top" id="tl1-AN-LvV"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="yth-y0-bJj"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="fR0-vJ-dY9"/>
                     <navigationItem key="navigationItem" id="2mj-7K-SG8"/>
@@ -548,7 +550,7 @@
             </objects>
             <point key="canvasLocation" x="1606" y="183"/>
         </scene>
-        <!--Order Delegate-->
+        <!--Orders-->
         <scene sceneID="Llz-ak-e4w">
             <objects>
                 <viewController title="Orders" id="jmd-qQ-QaD" customClass="OrdersViewController" customModule="TradeOgre" customModuleProvider="target" sceneMemberID="viewController">
@@ -558,7 +560,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kaE-at-2Po" customClass="OrdersTableView" customModule="TradeOgre" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="64" width="414" height="749"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Order" textLabel="XAd-OK-JYy" detailTextLabel="NaY-Ca-3Yf" style="IBUITableViewCellStyleSubtitle" id="keb-HL-m9N" customClass="OrderTableViewCell" customModule="TradeOgre" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
@@ -568,7 +570,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XAd-OK-JYy">
-                                                    <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="20" y="10" width="33" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -590,14 +592,14 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4sP-h8-v7g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4sP-h8-v7g" firstAttribute="bottom" secondItem="kaE-at-2Po" secondAttribute="bottom" id="3kE-MA-CD6"/>
                             <constraint firstItem="kaE-at-2Po" firstAttribute="leading" secondItem="4sP-h8-v7g" secondAttribute="leading" id="UbE-uq-U5Q"/>
                             <constraint firstItem="kaE-at-2Po" firstAttribute="top" secondItem="4sP-h8-v7g" secondAttribute="top" constant="20" id="Y6a-wT-mJm"/>
                             <constraint firstItem="4sP-h8-v7g" firstAttribute="trailing" secondItem="kaE-at-2Po" secondAttribute="trailing" id="sgw-LY-dPo"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="4sP-h8-v7g"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Orders" image="arrow.swap" catalog="system" id="owi-3X-sZO"/>
                     <connections>
@@ -617,7 +619,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trade ???-???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osm-v3-Sa5">
-                                <rect key="frame" x="140" y="20" width="134.5" height="27"/>
+                                <rect key="frame" x="140.5" y="20" width="133" height="27"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -633,51 +635,51 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZER-bC-Z4G" customClass="TradeLabel" customModule="TradeOgre" customModuleProvider="target">
-                                <rect key="frame" x="20" y="118.5" width="39" height="20.5"/>
+                                <rect key="frame" x="20" y="119" width="39" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price must be greater than 0." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnz-bJ-NHo" customClass="TradeLabel" customModule="TradeOgre" customModuleProvider="target">
-                                <rect key="frame" x="20" y="140" width="153" height="14"/>
+                                <rect key="frame" x="20" y="140.5" width="153" height="14"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
-                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89x-zd-toh" customClass="TradeLabel" customModule="TradeOgre" customModuleProvider="target">
-                                <rect key="frame" x="20" y="163.5" width="57.5" height="20.5"/>
+                                <rect key="frame" x="20" y="165" width="57" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBH-hj-OOT">
-                                <rect key="frame" x="352" y="118" width="42" height="21"/>
+                                <rect key="frame" x="352" y="118.5" width="42" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ENj-uc-Fv1">
-                                <rect key="frame" x="352" y="163.5" width="42" height="20.5"/>
+                                <rect key="frame" x="352" y="165" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" placeholder="0.000" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hNZ-Qw-MPq" customClass="TradeTextField" customModule="TradeOgre" customModuleProvider="target">
-                                <rect key="frame" x="140" y="118" width="204" height="21"/>
+                                <rect key="frame" x="140.5" y="118" width="203.5" height="22"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" placeholder="0.000" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qap-lG-Vyu" customClass="TradeTextField" customModule="TradeOgre" customModuleProvider="target">
-                                <rect key="frame" x="140" y="163" width="204" height="21"/>
+                                <rect key="frame" x="140.5" y="164" width="203.5" height="22"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qh0-pf-xzf" customClass="TradeButton" customModule="TradeOgre" customModuleProvider="target">
-                                <rect key="frame" x="20" y="208" width="374" height="39"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qh0-pf-xzf" customClass="TradeButton" customModule="TradeOgre" customModuleProvider="target">
+                                <rect key="frame" x="20" y="210" width="374" height="39"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <state key="normal" title="Preview Order">
-                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -691,28 +693,28 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXT-N0-I7A">
                                 <rect key="frame" x="333" y="72" width="61" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume must be greater than 0." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xc-9j-7Aq" customClass="TradeLabel" customModule="TradeOgre" customModuleProvider="target">
-                                <rect key="frame" x="20" y="185" width="165" height="14"/>
+                                <rect key="frame" x="20" y="186.5" width="165" height="14"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
-                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxI-HG-pIL" customClass="TradeLabel" customModule="TradeOgre" customModuleProvider="target">
-                                <rect key="frame" x="140" y="118" width="204" height="21"/>
+                                <rect key="frame" x="140.5" y="118.5" width="203.5" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIa-R1-2Qv" customClass="TradeLabel" customModule="TradeOgre" customModuleProvider="target">
-                                <rect key="frame" x="140" y="163" width="204" height="21"/>
+                                <rect key="frame" x="140.5" y="164.5" width="203.5" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6r-Vt-ced" customClass="TradeButton" customModule="TradeOgre" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6r-Vt-ced" customClass="TradeButton" customModule="TradeOgre" customModuleProvider="target">
                                 <rect key="frame" x="20" y="67.5" width="70" height="30"/>
                                 <state key="normal" title="Edit Order"/>
                                 <connections>
@@ -720,7 +722,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DwS-BD-uwN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DwS-BD-uwN" firstAttribute="trailing" secondItem="ENj-uc-Fv1" secondAttribute="trailing" constant="20" id="0Iz-lh-G9E"/>
                             <constraint firstItem="9Xc-9j-7Aq" firstAttribute="firstBaseline" secondItem="89x-zd-toh" secondAttribute="baseline" constant="16" symbolType="layoutAnchor" id="5aG-Th-aov"/>
@@ -760,7 +763,6 @@
                             <constraint firstItem="hNZ-Qw-MPq" firstAttribute="leading" secondItem="Osm-v3-Sa5" secondAttribute="leading" id="tn0-oG-Rp8"/>
                             <constraint firstItem="DwS-BD-uwN" firstAttribute="trailing" secondItem="lXT-N0-I7A" secondAttribute="trailing" constant="20" id="wKT-WZ-qqB"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="DwS-BD-uwN"/>
                     </view>
                     <connections>
                         <outlet property="actionSwitcher" destination="7Re-aa-6RX" id="hDD-6W-dMv"/>
@@ -829,11 +831,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U66-oo-AM5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U66-oo-AM5">
                                 <rect key="frame" x="20" y="413.5" width="374" height="30"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Log Out">
-                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -847,7 +849,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Version XXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkh-Vy-YYp">
                                 <rect key="frame" x="20" y="792" width="374" height="16"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                <color key="textColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="tertiaryLabelColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NpI-k0-7cv">
@@ -856,14 +858,14 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enjoying the app? Show your appreciation by sending some crypto!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1N-hZ-yHn">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="13.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
-                                        <color key="textColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="tertiaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hP-Dz-eJq">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hP-Dz-eJq">
                                         <rect key="frame" x="0.0" y="13.5" width="374" height="26"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                         <state key="normal" title="See Tip Details">
-                                            <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="systemTealColor"/>
                                         </state>
                                         <connections>
                                             <segue destination="eEy-OV-c2D" kind="popoverPresentation" popoverAnchorView="3hP-Dz-eJq" id="sxz-Wq-Uug">
@@ -874,7 +876,8 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="HhO-Eq-91J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rkh-Vy-YYp" firstAttribute="leading" secondItem="HhO-Eq-91J" secondAttribute="leading" constant="20" id="BPZ-dS-4Mb"/>
                             <constraint firstItem="HhO-Eq-91J" firstAttribute="trailing" secondItem="NpI-k0-7cv" secondAttribute="trailing" constant="20" id="BR8-JM-b7q"/>
@@ -887,7 +890,6 @@
                             <constraint firstItem="U66-oo-AM5" firstAttribute="centerY" secondItem="HhO-Eq-91J" secondAttribute="centerY" id="g9w-Ok-Rfl"/>
                             <constraint firstItem="HhO-Eq-91J" firstAttribute="trailing" secondItem="U66-oo-AM5" secondAttribute="trailing" constant="20" id="xFW-0R-Te2"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="HhO-Eq-91J"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="favicon" id="QPb-Wr-AX7"/>
                     <connections>
@@ -921,7 +923,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jWJ-cb-vh7">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jWJ-cb-vh7">
                                         <rect key="frame" x="0.0" y="30.5" width="373.5" height="33"/>
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="15"/>
                                         <state key="normal" title="87pYWFvyhmrWdw2EFekpZaZJf4tm758maJAigzkPmd9tD8ou3VByDMuG1DpsFcmTBzZrafk38kLv71wX5sfpX2ri7Zbym1P"/>
@@ -932,13 +934,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address copied to pasteboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COD-57-LGb">
                                         <rect key="frame" x="0.0" y="79.5" width="373.5" height="14.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMRTipQR" translatesAutoresizingMaskIntoConstraints="NO" id="ipE-Uj-EdY">
                                         <rect key="frame" x="0.0" y="110" width="373.5" height="240"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTg-VT-hll">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTg-VT-hll">
                                         <rect key="frame" x="0.0" y="366" width="373.5" height="27"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <state key="normal" title="What about an Android app?"/>
@@ -970,7 +972,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="w80-f1-VTt">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="w80-f1-VTt">
                                         <rect key="frame" x="0.0" y="30.5" width="374" height="33"/>
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="15"/>
                                         <state key="normal" title="89sA2PuDuYyDvrozNKynxaYDPdkvLUbfbbBQHUaa3dPMbYKkXLWqgGvFsubenscmfE95uv6G9nVha4yskG5h9bef8ptFJLu"/>
@@ -982,13 +984,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address copied to pasteboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpt-fJ-pXu">
                                         <rect key="frame" x="0.0" y="79.5" width="374" height="14.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="XMRTipQR-android" translatesAutoresizingMaskIntoConstraints="NO" id="LSc-xb-xYQ">
                                         <rect key="frame" x="0.0" y="110" width="374" height="240"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndy-vf-Hqz">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndy-vf-Hqz">
                                         <rect key="frame" x="0.0" y="366" width="374" height="27"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <state key="normal" title="Back to iOS tip"/>
@@ -999,7 +1001,8 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="b4R-ks-JWu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="b4R-ks-JWu" firstAttribute="trailing" secondItem="1Qa-hD-ps4" secondAttribute="trailing" constant="20.5" id="3ar-r3-Yol"/>
                             <constraint firstItem="ywQ-DB-vyd" firstAttribute="centerY" secondItem="7qc-55-jJD" secondAttribute="centerY" id="4Vc-6X-5O3"/>
@@ -1017,7 +1020,6 @@
                             <constraint firstItem="b4R-ks-JWu" firstAttribute="trailing" secondItem="awO-Hc-VfS" secondAttribute="trailing" constant="20" id="z0l-a2-uUP"/>
                             <constraint firstItem="awO-Hc-VfS" firstAttribute="top" secondItem="b4R-ks-JWu" secondAttribute="top" constant="20" id="zod-mq-9zf"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="b4R-ks-JWu"/>
                     </view>
                     <connections>
                         <outlet property="addressCopiedLabel" destination="COD-57-LGb" id="Gl9-By-t6z"/>
@@ -1033,15 +1035,36 @@
             <point key="canvasLocation" x="1653.6231884057972" y="1755.8035714285713"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="XMRTipQR" width="240" height="240"/>
-        <image name="XMRTipQR-android" width="240" height="240"/>
-        <image name="arrow.swap" catalog="system" width="64" height="50"/>
-        <image name="bitcoinsign.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="favicon" width="16" height="16"/>
-        <image name="list.dash" catalog="system" width="64" height="42"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="yOe-3R-mfS"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="XMRTipQR" width="240" height="240"/>
+        <image name="XMRTipQR-android" width="240" height="240"/>
+        <image name="arrow.swap" catalog="system" width="128" height="100"/>
+        <image name="bitcoinsign.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="favicon" width="16" height="16"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

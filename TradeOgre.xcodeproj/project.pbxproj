@@ -15,6 +15,7 @@
 		751DF86B272B3D940029320D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751DF86A272B3D940029320D /* AppState.swift */; };
 		751DF86D272B55CF0029320D /* MarketsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751DF86C272B55CF0029320D /* MarketsNavigationController.swift */; };
 		751DF86F272B74300029320D /* PortfolioNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751DF86E272B74300029320D /* PortfolioNavigationController.swift */; };
+		7536738D2793989500836899 /* APIKeysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536738C2793989500836899 /* APIKeysViewController.swift */; };
 		753DA7BE2730428E003059FA /* Combine+TradeOgre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DA7BD2730428E003059FA /* Combine+TradeOgre.swift */; };
 		753DA7C427305838003059FA /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DA7C327305838003059FA /* Client.swift */; };
 		753DA7C6273080F2003059FA /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753DA7C5273080F2003059FA /* TipViewController.swift */; };
@@ -53,6 +54,7 @@
 		751DF86A272B3D940029320D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		751DF86C272B55CF0029320D /* MarketsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsNavigationController.swift; sourceTree = "<group>"; };
 		751DF86E272B74300029320D /* PortfolioNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioNavigationController.swift; sourceTree = "<group>"; };
+		7536738C2793989500836899 /* APIKeysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeysViewController.swift; sourceTree = "<group>"; };
 		753DA7BD2730428E003059FA /* Combine+TradeOgre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+TradeOgre.swift"; sourceTree = "<group>"; };
 		753DA7C327305838003059FA /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		753DA7C5273080F2003059FA /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				751DF86C272B55CF0029320D /* MarketsNavigationController.swift */,
 				75A9B2EC2729C1B20030078E /* MarketsViewController.swift */,
 				751DF868272B3A550029320D /* UnauthenticatedRootTabBarController.swift */,
+				7536738C2793989500836899 /* APIKeysViewController.swift */,
 			);
 			path = Unauthenticated;
 			sourceTree = "<group>";
@@ -225,7 +228,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Big Byte Studios, Inc.";
 				TargetAttributes = {
 					75A9B2E42729C1B20030078E = {
@@ -301,6 +304,7 @@
 				751BC467272DCD2A0099C32F /* AuthedMarketsNavigationController.swift in Sources */,
 				75848059272C4F9700E92B02 /* OrdersViewController.swift in Sources */,
 				75A9B3082729F5D30030078E /* MarketDetailsViewController.swift in Sources */,
+				7536738D2793989500836899 /* APIKeysViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +356,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -412,6 +417,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
