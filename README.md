@@ -1,3 +1,7 @@
+## :warning: Notice: Inactive Project :warning: 
+
+**This project is no longer actively maintained. With a lack of support from both TradeOgre.com and Apple, this project cannot be published to the App Store and distributed as an app.**
+
 #  TradeOgre iOS
 
 ## Overview
